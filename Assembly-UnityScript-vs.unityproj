@@ -47,6 +47,7 @@
      <Compile Include="Assets\InputRecorder.js" />
      <Compile Include="Assets\Introduction.js" />
      <Compile Include="Assets\Repeat.js" />
+     <Compile Include="Assets\Transition1.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

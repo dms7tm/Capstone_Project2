@@ -77,8 +77,13 @@ function OnGUI () {
      gameObject.SendMessage("WriteFile",index); 
       }
  }
- if (count == 1)
+ if (count == 1){
+     index = 0;
+     audio.PlayOneShot(clipArray[0]);
+     count=4;
+     Wait(3);
      doIt(0,3);
+ }
  if (count == 2){
      index = 3;
      count = 4;
@@ -86,16 +91,35 @@ function OnGUI () {
      isRepeatVisible = true;
      Wait(10);
  }
- if (count == 3)
-     doIt(4,12);
- if(count == 5)
-     doIt(6,7);
- if(count == 6)
-    doIt(5,0);
- if(count == 7)
-    doIt(9,2);
- if(count == 8)
- 	doIt(8,4);
+ if (count == 3){
+     index = 4;
+     count=4;
+     audio.PlayOneShot(clipArray[4]);
+     Wait(12);
+ }
+ if(count == 5){
+     index = 6;
+     audio.PlayOneShot(clipArray[6]);
+     count =4;
+     Wait(7);
+ }
+ if(count == 6){
+    index = 5;
+    audio.PlayOneShot(clipArray[5]);
+    count =4;
+ }
+ if(count == 7){
+    index = 9;
+    audio.PlayOneShot(clipArray[9]);
+    count =4;
+    Wait(2);
+ }
+ if(count == 8){
+ 	index = 8;
+ 	audio.PlayOneShot(clipArray[8]);
+ 	count =4;
+ 	Wait(4);
+ }
  if(count == 9){
     index = 10;
     audio.PlayOneShot(clipArray[10]);
@@ -105,42 +129,114 @@ function OnGUI () {
 //    else
 //      Let's Review #1
  }
- if(count == 10)
- 	doIt(11,4);
- if(count == 11)
- 	doIt(12,29);
- if(count == 12)
-    doIt(13,3);
- if(count == 13) 
-	doIt(14,17);
- if(count == 14)
- 	doIt(15,6);
-  if(count == 15)
-	doIt(16,12);
-  if(count == 16)
-	doIt(17,5);
-  if(count == 17)
-	doIt(18,6);
-  if(count == 18)
-	doIt(19,3);
-  if(count == 19)
-	doIt(20,4);
-  if(count == 20)
-	doIt(21,11);
-  if(count == 21)
-	doIt(22,28);
-  if(count == 22)
-	doIt(23,5);
-  if(count == 23)
-	doIt(25,20);
-  if(count == 24)
-	doIt(24,8);
-  if(count == 25)
-	doIt(26,3);
-  if(count == 26)
-	doIt(27,3);
-  if(count == 27)
-	doIt(28,18);
+ if(count == 10){
+ 	index = 11;
+ 	audio.PlayOneShot(clipArray[11]);
+ 	count =4;
+ 	Wait(4);
+ }
+ if(count == 11){
+ 	index = 12;
+ 	audio.PlayOneShot(clipArray[12]);
+ 	count = 4;
+ 	Wait(29);
+ }
+ if(count == 12){
+    index = 13;
+    audio.PlayOneShot(clipArray[13]);
+    count = 4;
+    Wait(3);
+ }
+ if(count == 13){
+	index = 14;
+	audio.PlayOneShot(clipArray[14]);
+	count = 4;
+	Wait(17); 
+ }
+ if(count == 14){
+    index = 15;
+    audio.PlayOneShot(clipArray[15]);
+    count = 4;
+	Wait(6);
+ }
+  if(count == 15){
+    index = 16;
+    audio.PlayOneShot(clipArray[16]);
+    count = 4;
+	Wait(12);
+ }
+  if(count == 16){
+    index = 17;
+    audio.PlayOneShot(clipArray[17]);
+    count = 4;
+	Wait(5);
+ }
+  if(count == 17){
+    index = 18;
+    audio.PlayOneShot(clipArray[18]);
+    count = 4;
+	Wait(6);
+ }
+  if(count == 18){
+    index = 19;
+    audio.PlayOneShot(clipArray[19]);
+    count = 4;
+	Wait(3);
+ }
+  if(count == 19){
+    index = 20;
+    audio.PlayOneShot(clipArray[20]);
+    count = 4;
+	Wait(4);
+ }
+  if(count == 20){
+    index = 21;
+    audio.PlayOneShot(clipArray[21]);
+    count = 4;
+	Wait(11);
+ }
+  if(count == 21){
+    index = 22;
+    audio.PlayOneShot(clipArray[22]);
+    count = 4;
+	Wait(28);
+ }
+  if(count == 22){
+    index = 23;
+    audio.PlayOneShot(clipArray[23]);
+    count = 4;
+	Wait(5);
+ }
+  if(count == 23){
+    index = 25;
+    audio.PlayOneShot(clipArray[25]);
+    count = 4;
+	Wait(20);
+ }
+  if(count == 24){
+    index = 24;
+    audio.PlayOneShot(clipArray[24]);
+    count = 4;
+	Wait(8);
+ }
+  if(count == 25){
+    index = 26;
+    audio.PlayOneShot(clipArray[26]);
+    count = 4;
+	Wait(3);
+ }
+  if(count == 26){
+    index = 27;
+    audio.PlayOneShot(clipArray[27]);
+    count = 4;
+	Wait(3);
+ }
+  if(count == 27){
+    index = 28;
+    audio.PlayOneShot(clipArray[28]);
+    count = 4;
+	Wait(18);
+ }
 }
 function doIt(ind:int,time:int){
     index = ind;

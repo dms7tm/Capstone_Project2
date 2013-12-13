@@ -10,6 +10,6 @@ function Update () {
 
 }
 
-function WriteFile (click: String){
+function WriteFile (click: int){
   System.IO.File.AppendAllText("C:/Users/Kristen/Desktop/Prototype/InputLog",click + "," + Time.time+ Environment.NewLine);
 }

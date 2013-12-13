@@ -4,15 +4,17 @@
  var second : boolean = false;
  var repeatAudio : AudioClip;
  var transAudio : AudioClip;
+ var notReady : AudioClip;
  var yes : AudioClip;
  var no : AudioClip;
+ var isButtonVisible1  :  boolean  =  true;
  var arr = new Array();
 function Start () {
   
 }
 
 function OnGUI () {
-  if(pressed == 1){
+  if(pressed == 1&& isButtonVisible1){
   if(first){
    audio.PlayOneShot(repeatAudio);
    first = false;
@@ -29,11 +31,15 @@ function OnGUI () {
    GUI.backgroundColor = oldColor;
     if (y) {  	  
    	 audio.PlayOneShot(yes);
-   	 gameObject.SendMessage("WriteFile","Y2"); 
+   	 gameObject.SendMessage("WriteFile","Y2");
+   	 gameObject.SendMessage("goToTransOne"); 
+   	 isButtonVisible1 = false;
    }
     if(n) {
      audio.PlayOneShot(no);
      gameObject.SendMessage("WriteFile","N2"); 
+     audio.PlayOneShot(notReady);
+     isButtonVisible1 = false;
   }
   }     
    }

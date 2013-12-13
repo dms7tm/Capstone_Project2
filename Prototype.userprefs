@@ -1,10 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Repeat.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Introduction.js">
     <Files>
-      <File FileName="Assets\Repeat.js" Line="19" Column="21" />
-      <File FileName="Assets\Introduction.js" Line="10" Column="1" />
-      <File FileName="Assets\InputRecorder.js" Line="13" Column="10" />
+      <File FileName="Assets\Introduction.js" Line="218" Column="15" />
+      <File FileName="Assets\InputRecorder.js" Line="15" Column="2" />
+      <File FileName="Assets\Repeat.js" Line="1" Column="1" />
+      <File FileName="Assets\Transition1.js" Line="42" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
