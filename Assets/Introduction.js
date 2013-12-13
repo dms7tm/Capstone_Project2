@@ -16,13 +16,15 @@ function Start () {
 }
 
 function OnGUI () {
- if(isRepeatVisible){
+   //this if block handles the repeat button
+ if(isRepeatVisible){  
    GUI.backgroundColor = Color.green;
    var repeat = GUI.Button(Rect(750,0,100,50),"Repeat");
    if(repeat){
      audio.PlayOneShot(clipArray[index]);
    }
  }
+  //this if block handles the yes and no buttons
  if(isButtonVisible && count>0){
    var oldColor = GUI.backgroundColor;
    GUI.backgroundColor = Color.blue;
